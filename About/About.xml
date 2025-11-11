@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Starship Troopers Federation</name>
+	<packageId>Ogam.StarshipTroopers</packageId>
+	<author>Ogam</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>PLACEHOLDER</description>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+    </loadAfter>
+
+</ModMetaData>
