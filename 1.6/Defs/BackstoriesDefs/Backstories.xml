@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!--__Backstories__-->
+
+<!-- Buenos Aires Survivor -->
+
+    <BackstoryDef>
+        <defName>Starship_BuenosAiresSurvivor</defName>
+        <identifier>Buenos Aires Survivor</identifier>
+        <slot>Adulthood</slot>
+        <title>Buenos Aires Survivor</title>
+        <titleShort>Survivor</titleShort>
+        <description>[PAWN_nameDef] was a civilian in Buenos Aires when the Arachnid plasma bolt struck the city, killing millions. [PAWN_pronoun] watched friends and family die in the firestorm. The next day, [PAWN_nameDef] enlisted in the Mobile Infantry. [PAWN_possessive] service is not about citizenship—it's about revenge. Every bug killed is one less monster in the universe.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Shooting</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Tough>1</Tough>
+            <Bloodlust>1</Bloodlust>
+        </forcedTraits>
+    </BackstoryDef>
+
+<!-- Federal Service Idealist -->
+
+    <BackstoryDef>
+        <defName>Starship_FederalServiceIdealist</defName>
+        <identifier>Federal Service Idealist</identifier>
+        <slot>Adulthood</slot>
+        <title>Federal Service Idealist</title>
+        <titleShort>Idealist</titleShort>
+        <description>[PAWN_nameDef] grew up believing in the Federation's principles: that citizenship must be earned through service and sacrifice. Unlike many who join for benefits, [PAWN_nameDef] truly believes that Federal Service creates better citizens. [PAWN_pronoun] volunteered to prove [PAWN_possessive] worth and serve humanity's greater good.</description>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Social</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Kind>1</Kind>
+            <Industriousness>0</Industriousness>
+        </forcedTraits>
+    </BackstoryDef>
+
+<!-- Farm Kid Enlists -->
+
+    <BackstoryDef>
+        <defName>Starship_FarmKidEnlists</defName>
+        <identifier>Farm Kid Enlists</identifier>
+        <slot>Adulthood</slot>
+        <title>Farm Kid Enlists</title>
+        <titleShort>Farm Kid</titleShort>
+        <description>[PAWN_nameDef] grew up on a frontier agricultural colony, dreaming of adventure among the stars. When Federation recruiters came through offering citizenship and a way off the farm, [PAWN_nameDef] jumped at the chance. Boot camp was harder than any harvest, but [PAWN_pronoun] learned to be a soldier.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Animals>3</Animals>
+            <Plants>2</Plants>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Animals</li>
+            <li>Plants</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </BackstoryDef>
+
+<!-- Second-Generation Trooper -->
+
+    <BackstoryDef>
+        <defName>Starship_SecondGenerationTrooper</defName>
+        <identifier>Second-Generation Trooper</identifier>
+        <slot>Adulthood</slot>
+        <title>Second-Generation Trooper</title>
+        <titleShort>Trooper</titleShort>
+        <description>[PAWN_nameDef]'s parents were both Mobile Infantry veterans. [PAWN_pronoun] grew up on military bases, surrounded by service culture. Enlisting was never a question—it was destiny. [PAWN_nameDef] carries the family tradition and aims to earn the same respect [PAWN_possessive] parents commanded.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>2</Melee>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Shooting</li>
+            <li>Social</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+<!-- Seeking Redemption -->
+
+    <BackstoryDef>
+        <defName>Starship_SeekingRedemption</defName>
+        <identifier>Seeking Redemption</identifier>
+        <slot>Adulthood</slot>
+        <title>Seeking Redemption</title>
+        <titleShort>Redemption</titleShort>
+        <description>[PAWN_nameDef] had a troubled youth—petty crimes, bad decisions, wasted potential. The Mobile Infantry was [PAWN_possessive] last chance to make something of [PAWN_objective]. Federal Service doesn't care about your past; it only cares whether you can complete your term. [PAWN_nameDef] fights to prove [PAWN_pronoun] is more than [PAWN_possessive] mistakes.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>3</Melee>
+            <Crafting>1</Crafting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Shooting</li>
+            <li>Crafting</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Tough>1</Tough>
+            <Brawler>0</Brawler>
+        </forcedTraits>
+    </BackstoryDef>
+
+<!-- Combat Drop Veteran -->
+
+    <BackstoryDef>
+        <defName>Starship_CombatDropVeteran</defName>
+        <identifier>Combat Drop Veteran</identifier>
+        <slot>Adulthood</slot>
+        <title>Combat Drop Veteran</title>
+        <titleShort>Veteran</titleShort>
+        <description>[PAWN_nameDef] has survived over forty combat drops onto hostile worlds. [PAWN_pronoun] has seen troopers die in drop capsules, watched entire platoons get overrun, and pulled wounded soldiers from burning wreckage. [PAWN_nameDef] is a hardened professional who trains new recruits with brutal honesty: "The enemy will try to kill you. I'm here to teach you how to kill them first."</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>4</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Shooting</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Tough>2</Tough>
+            <Bloodlust>1</Bloodlust>
+            <Nerves>0</Nerves>
+        </forcedTraits>
+    </BackstoryDef>
+
+<!-- Technical Specialist -->
+
+    <BackstoryDef>
+        <defName>Starship_TechnicalSpecialist</defName>
+        <identifier>Technical Specialist</identifier>
+        <slot>Adulthood</slot>
+        <title>Technical Specialist</title>
+        <titleShort>Specialist</titleShort>
+        <description>[PAWN_nameDef] joined Federal Service with technical aptitude scores in the 95th percentile. Instead of frontline combat, [PAWN_pronoun] was assigned to Mobile Infantry technical support—maintaining powered armor, weapons systems, and communications gear. [PAWN_nameDef] keeps the squad operational, one repair at a time.</description>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Intellectual>4</Intellectual>
+            <Crafting>5</Crafting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Crafting</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Industriousness>1</Industriousness>
+        </forcedTraits>
+    </BackstoryDef>
+
+<!-- Medic - "Doc" -->
+
+    <BackstoryDef>
+        <defName>Starship_Medic</defName>
+        <identifier>Medic "Doc"</identifier>
+        <slot>Adulthood</slot>
+        <title>Medic "Doc"</title>
+        <titleShort>Doc</titleShort>
+        <description>[PAWN_nameDef] completed Federal Service medical training and now serves as a combat medic with Mobile Infantry units. [PAWN_pronoun] has saved dozens of lives under fire and watched just as many die despite [PAWN_possessive] best efforts. Every trooper who walks away from [PAWN_possessive] care is a victory against death itself.</description>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Intellectual>3</Intellectual>
+            <Medicine>6</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Medicine</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Kind>1</Kind>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </BackstoryDef>    
+
+<!--  Academy Graduate - Officer -->
+
+    <BackstoryDef>
+        <defName>Starship_AcademyGraduateOfficer</defName>
+        <identifier> Academy Graduate Officer</identifier>
+        <slot>Adulthood</slot>
+        <title>Academy Graduate Officer</title>
+        <titleShort>Officer</titleShort>
+        <description>[PAWN_nameDef] enlisted in Federal Service and distinguished [PAWN_objective] in combat, earning a recommendation to Officer Candidate School. [PAWN_pronoun] graduated in the top 15% and received a commission as a Mobile Infantry officer. [PAWN_nameDef] leads from the front and never asks troopers to do anything [PAWN_pronoun] wouldn't do.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Intellectual>3</Intellectual>
+            <Social>4</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Social</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>    
+
+<!-- Battlefield Commission -->
+
+    <BackstoryDef>
+        <defName>Starship_BattlefieldCommission</defName>
+        <identifier>Battlefield Commission</identifier>
+        <slot>Adulthood</slot>
+        <title>Battlefield Commission</title>
+        <titleShort>Commission</titleShort>
+        <description>When [PAWN_nameDef]'s platoon commander was killed by enemy fire, [PAWN_pronoun] took command and led the survivors through a fighting withdrawal under impossible odds. For [PAWN_possessive] actions, [PAWN_nameDef] received a battlefield commission to Lieutenant. [PAWN_pronoun] earned respect the hard way—in blood.</description>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Social>3</Social>
+            <Melee>3</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Social</li>
+            <li>Shooting</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Nerves>1</Nerves>
+            <Tough>2</Tough>
+        </forcedTraits>
+    </BackstoryDef>    
+
+<!--  Federal Recruiter -->
+
+    <BackstoryDef>
+        <defName>Starship_FederalRecruiter</defName>
+        <identifier>Federal Recruiter</identifier>
+        <slot>Adulthood</slot>
+        <title>Federal Recruiter</title>
+        <titleShort>Recruited</titleShort>
+        <description>[PAWN_nameDef] completed [PAWN_possessive] Federal Service term with distinction and chose to continue serving as a recruiter. [PAWN_pronoun] travels frontier worlds, offering civilians the opportunity to earn citizenship through service. "Service guarantees citizenship," [PAWN_nameDef] tells them—and means it.</description>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+            <li>Violent</li>
+        </workDisables>
+        <requiredWorkTags>
+            <li>Social</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Kind>1</Kind>
+        </forcedTraits>
+    </BackstoryDef>    
+
+<!--  Federation Scientist -->
+
+    <BackstoryDef>
+        <defName>Starship_FederationScientist</defName>
+        <identifier>Federation Scientist</identifier>
+        <slot>Adulthood</slot>
+        <title>Federation Scientist</title>
+        <titleShort>Scientist</titleShort>
+        <description>[PAWN_nameDef] earned citizenship through Federal Service as a research technician and continued working in Federation R and D. [PAWN_pronoun] develops improved equipment, weapons, and armor for Mobile Infantry forces. [PAWN_nameDef] may not fight on the front lines, but [PAWN_possessive] work saves trooper lives.</description>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Intellectual>7</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Firefighting</li>
+            <li>Violent</li>
+        </workDisables>
+        <requiredWorkTags>
+            <li>Crafting</li>
+            <li>Research</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>Starship_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+        <forcedTraits>
+            <Industriousness>1</Industriousness>
+        </forcedTraits>
+    </BackstoryDef>    
+
+</Defs>
