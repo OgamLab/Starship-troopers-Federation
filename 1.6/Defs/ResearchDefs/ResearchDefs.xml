@@ -2,6 +2,33 @@
 
 <Defs>
 
+    <ResearchTabDef>
+        <defName>ResearchTab_Starfield</defName>
+        <label>Starfield Troopers</label>
+        <generalTitle>Starfield Troopers research</generalTitle>
+        <generalDescription>PLACEHOLDER</generalDescription>
+    </ResearchTabDef>
 
-    
+    <ResearchProjectDef>
+        <defName>Research_FederationWeaponry</defName>
+        <label>Federation Weaponry</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ResearchTab_Starfield</tab>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Research_FederationArmory</defName>
+        <label>Federation Armory</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ResearchTab_Starfield</tab>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
 </Defs>
