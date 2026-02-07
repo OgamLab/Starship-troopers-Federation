@@ -7,7 +7,7 @@
 <!-- MI Scout Helmet -->
 
 <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Apparel_MIScoutHelmet</defName>
+    <defName>Fed_Apparel_MIScoutHelmet</defName>
     <label>MI Scout Helmet</label>
     <description>"The MI Scout Helmet prioritizes awareness over armor. Its advanced HUD feeds real-time tactical data directly to your retina while maintaining minimal weight. Reconnaissance troopers swear by the Scout helmet's superior field of view—when you need to see them before they see you, this is what you wear."</description>
     <techLevel>Spacer</techLevel>
@@ -65,7 +65,7 @@
 <!-- M-1A4 Powered Helmet -->
 
 <ThingDef ParentName="ArmorHelmetMakeableBase">
-   <defName>Apparel_M-1A4PoweredHelmet</defName>
+   <defName>Fed_Apparel_M-1A4PoweredHelmet</defName>
     <label>M-1A4 Powered Helmet</label>
     <description>"The M-1A4 Powered Helmet transforms the trooper's perception of combat. Three-hundred-sixty degree awareness means nothing sneaks up on you—sensors feed visual, thermal, and tactical data directly into your field of view. Targeting reticules lock onto threats automatically. Squad status updates in real-time. This isn't just protection—it's total battlefield domination through information superiority. The helmet's indirect visual system and armored construction can stop rounds that would penetrate standard MI helmets. When sealed with the powered suit body, you're protected from vacuum, hostile atmospheres, and NBC threats."</description>
     <techLevel>Spacer</techLevel>
@@ -134,7 +134,7 @@
 <!-- MI Field Cap -->
 
 <ThingDef ParentName="HatMakeableBase">
-    <defName>Apparel_MIFieldCap</defName>
+    <defName>Fed_Apparel_MIFieldCap</defName>
     <label>MI Field Cap</label>
     <description>"The MI field cap is what troopers wear when they're not in combat—during transport to combat zones, garrison duty, or brief moments of downtime. It's not armor, it won't stop a bug, but it keeps the sun out of your eyes and marks you as Mobile Infantry. Some veterans never take it off, even when regulation says otherwise. It's a small comfort in a dangerous galaxy."</description>
     <graphicData>
@@ -189,7 +189,7 @@
 <!-- MI Scout Body Armor -->
 
 <ThingDef ParentName="ArmorMachineableBase">
-    <defName>Apparel_MIScoutBodyArmor</defName>
+    <defName>Fed_Apparel_MIScoutBodyArmor</defName>
     <label>MI Scout Body Armor</label>
     <description>"MI Scout Armor trades heavy plating for speed and agility. Reconnaissance troopers need to move fast, stay quiet, and get out alive—this armor delivers. While it won't stop a plasma bug blast, it'll keep you breathing through small arms fire and let you outrun anything heavier. Move light, move fast, stay alive."</description>
     <techLevel>Spacer</techLevel>
@@ -270,7 +270,7 @@
 <!-- M-1A4 Powered Suit -->
 
 <ThingDef ParentName="ArmorMachineableBase">
-    <defName>Apparel_M-1A4PoweredSuit</defName>
+    <defName>Fed_Apparel_M-1A4PoweredSuit</defName>
     <label>M-1A4 Powered Suit</label>
     <description>"The M-1A4 Powered Suit is what makes Mobile Infantry truly mobile. Servo-enhanced strength lets you carry heavy weapons like sidearms and shrug off loads that would break an unassisted human. Integrated jump jets—built right into the armor's frame—launch you across terrain in bounding leaps, letting you cover kilometers rapidly while staying 'on the bounce.' The suit's titanium alloy shell stops everything from small arms to bug mandibles, and full environmental sealing means you can operate anywhere—vacuum, toxic atmospheres, radioactive zones.
 
@@ -369,21 +369,6 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.33,0.33,0.33)</only>
-        </li>
-        <li>
-          <only>(0.65,0.65,0.65)</only>
-        </li>
-        <li>
-          <weight>0.5</weight>
-          <min>(0.3,0.3,0.3)</min>
-          <max>(0.5,0.5,0.5)</max>
-        </li>
-      </options>
-    </colorGenerator>
     <tradeTags>
       <li>Armor</li>
     </tradeTags>
@@ -392,7 +377,7 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 <!-- MI Combat Undersuit -->
 
 <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_MICombatUndersuit</defName>
+    <defName>Fed_Apparel_MICombatUndersuit</defName>
     <label>MI Combat Undersuit</label>
     <description>"The MI Combat Undersuit is what troopers actually live in. Black base layer with gray utility coveralls—worn under armor for protection, padding, and moisture control. On ship duty or between operations, many troopers wear just the undersuit without armor. It's not glamorous, but it keeps you comfortable during the long hours sealed inside combat armor. Wash it when you can, wear it till it falls apart."</description>
     <recipeMaker>
@@ -452,7 +437,7 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 <!-- MI Training Fatigues -->
 
 <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_MITrainingFatigues</defName>
+    <defName>Fed_Apparel_MITrainingFatigues</defName>
     <label>MI Training Fatigues</label>
     <description>"The black training fatigues mark you as a boot—a recruit going through hell at Camp Currie or one of the other training facilities. Every Mobile Infantry trooper remembers wearing these during endless PT runs, knife-throwing practice, and Sergeant Zim's brutal close combat drills. The MI wings on your chest mean you're working toward earning the right to wear combat armor. Survive training, and you'll never want to see these fatigues again."</description>
     <recipeMaker>
@@ -512,7 +497,7 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 <!-- MI Dress Uniform Mobile infantry -->
 
 <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_MIDressUniformMobileInfantry</defName>
+    <defName>Fed_Apparel_MIDressUniformMobileInfantry</defName>
     <label>MI Dress Uniform Mobile Infantry</label>
     <description>"The MI Dress Uniform is reserved for formal occasions—citizenship ceremonies, funerals for fallen troopers, official Federation functions. When the Mobile Infantry needs to look professional rather than battle-ready, this is what they wear. The black tunic with rank insignia on the shoulders and the white belt represent Federal Service honor. Every trooper keeps dress uniform ready—you never know when you'll need to bury a friend or accept a medal."</description>
     <recipeMaker>
@@ -573,7 +558,7 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 <!-- Fleet Officer Dress Uniform -->
 
 <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_FleetOfficerDressUniform</defName>
+    <defName>Fed_Apparel_FleetOfficerDressUniform</defName>
     <label>Fleet Officer Dress Uniform</label>
     <description>"Fleet officers wear light blue gray where Mobile Infantry wears gray. The light blue gray tunic with its distinctive lapels marks you as Federation Navy—starship pilots, navigation specialists, and fleet command. While MI troopers fight bugs on the ground, Fleet officers control the spaceways and drop those troopers into combat zones. The gray uniform represents a different kind of service, but service all the same. Would you like to know more about joining Fleet?"</description>
     <recipeMaker>
@@ -633,7 +618,7 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 <!-- Secret Intelligence Service Uniform -->
 
 <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_SecretIntelligenceServiceUniform</defName>
+    <defName>Fed_Apparel_SecretIntelligenceServiceUniform</defName>
     <label>Secret Intelligence Service Uniform</label>
     <description>Intel has its own group of psychics called Psi Ops as a core and leadership branch and often utilizes them to collect data. Intel also calculates casualties and survival rates. However, Intel is rarely correct, such as at the Battle of Klendathu where Intel believed that the plasma fired at the ships was "only random and light"; a fact that was proven wrong when many shots of plasma tore through the hulls of Fleet's ships. Intel values information more than human life and has an uneasy relationship with other branches. Intel often conducts high-priority top-secret missions of which commanders in other branches are unaware such as the development of the bio-engineered X-Bug as part of an offensive against the Arachnids on the planet Hesperus.</description>
     <recipeMaker>
@@ -691,10 +676,16 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 
 <!--__Webbings__-->
 
+<ApparelLayerDef> 
+         <defName>WebbingLayer</defName> 
+         <label>webbing layer</label> 
+       <drawOrder>250</drawOrder> 
+    </ApparelLayerDef> 
+
 <!-- MI Mobile Infantry Tactical Webbing -->
 
 <ThingDef ParentName="ApparelBase">
-    <defName>Apparel_MIMobileInfantryTacticalWebbing</defName>
+    <defName>Fed_Apparel_MIMobileInfantryTacticalWebbing</defName>
     <label>MI Mobile infantry Tactical Webbing</label>
     <description>"A webbing carries the essentials—nothing more, nothing less. Ammunition, grenades, survival kit, sidearm. Every ounce counts when you're operating ahead of the main force. Light, functional, and built to keep you moving."</description>
     <techLevel>Spacer</techLevel>
@@ -749,33 +740,12 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
         <li>Waist</li>
       </bodyPartGroups>
       <layers>
-        <li>Belt</li>
+        <li>WebbingLayer</li>
       </layers>
       <tags>
-        <li>BeltDefensePop</li>
+        <li>Webbings</li>
       </tags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.6,0.4,0.4,1)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.6,0.6,0.4,1)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
-        </li>
-      </options>
-    </colorGenerator>
     <tradeTags>
       <li>Clothing</li>
       <li>Armor</li>
@@ -785,7 +755,7 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 <!-- MI Mobile Infantry Combat Medic -->
 
 <ThingDef ParentName="ApparelBase">
-    <defName>Apparel_MIMobileInfantryCombatMedic</defName>
+    <defName>Fed_Apparel_MIMobileInfantryCombatMedic</defName>
     <label>MI Mobile infantry Combat Medic</label>
     <description>The Medical Corps is the force within Federal Armed Services charged with the training and deployment of Medical personnel along with relevant equipment. The Medical Corps' most notable units are those of Combat Medics whom are regularly seen along Mobile Infantry units. It functions alongside both the Mobile Infantry and the Fleet</description>
     <techLevel>Spacer</techLevel>
@@ -837,36 +807,15 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
       <careIfDamaged>false</careIfDamaged>
       <wearPerDay>0</wearPerDay>
       <bodyPartGroups>
-        <li>Waist</li>
+        <li>Torso</li>
       </bodyPartGroups>
       <layers>
-        <li>Belt</li>
+        <li>WebbingLayer</li>
       </layers>
       <tags>
-        <li>BeltDefensePop</li>
+        <li>Webbing</li>
       </tags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.6,0.4,0.4,1)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.6,0.6,0.4,1)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
-        </li>
-      </options>
-    </colorGenerator>
     <tradeTags>
       <li>Clothing</li>
       <li>Armor</li>
@@ -876,7 +825,7 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
 <!-- MI Mobile Infantry Radio Operator -->
 
 <ThingDef ParentName="ApparelBase">
-    <defName>Apparel_MIMobileInfantryRadioOperator</defName>
+    <defName>Fed_Apparel_MIMobileInfantryRadioOperator</defName>
     <label>MI Mobile infantry Radio Operator</label>
     <description>A crucial comms specialist, typically carrying a backpack radio to coordinate with command, call in air/orbital support, request reinforcements, and sometimes boost nearby allies' fire rate, ensuring vital communication for massive assaults and strategic maneuvers, though often staying behind front lines for safety while linking infantry pushes</description>
     <techLevel>Spacer</techLevel>
@@ -928,36 +877,15 @@ Heavy? Yes. Slow? Compared to unarmored troops. But when you're sealed in an M-1
       <careIfDamaged>false</careIfDamaged>
       <wearPerDay>0</wearPerDay>
       <bodyPartGroups>
-        <li>Waist</li>
+        <li>Torso</li>
       </bodyPartGroups>
       <layers>
-        <li>Belt</li>
+        <li>WebbingLayer</li>
       </layers>
       <tags>
-        <li>BeltDefensePop</li>
+        <li>Webbing</li>
       </tags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.6,0.4,0.4,1)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.6,0.6,0.4,1)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
-        </li>
-      </options>
-    </colorGenerator>
     <tradeTags>
       <li>Clothing</li>
       <li>Armor</li>

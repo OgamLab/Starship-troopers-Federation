@@ -9,7 +9,7 @@
 <!-- Morita MKI Assault Rifle -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_MoritaMkIAssaultRifle</defName>
+    <defName>Fed_Gun_MoritaMkIAssaultRifle</defName>
     <label>Morita MKI Assault Rifle</label>
     <description>The Morita MK I is the standard-issue assault rifle of the Terran Federation Mobile Infantry. This bullpup-configured weapon fires high-velocity caseless ammunition at a blistering rate, designed to shred through chitinous armor and overwhelming insectoid swarms. Reliable, durable, and brutally effective—the Morita has served on every front of humanity's war for survival. Every trooper knows: your Morita is your life.</description>
     <graphicData>
@@ -83,7 +83,7 @@
 <!-- TW 202-L Morita Hawkeye -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_TW202-LMoritaHawkeye</defName>
+    <defName>Fed_Gun_TW202-LMoritaHawkeye</defName>
     <label>TW 202-L Morita Hawkeye</label>
     <description>When bugs need to die at distance, Mobile Infantry marksmen reach for the Hawkeye. This precision instrument features an advanced targeting scope capable of tracking hostile movement and calculating environmental factors in real-time. One shot, one kill—that's the Hawkeye way. Whether eliminating Gunner bugs from safety or taking out Brain bugs, the Hawkeye delivers Federation justice from a kilometer away.</description>
     <graphicData>
@@ -155,7 +155,7 @@
 <!-- Morita MK III -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_MoritaMKIII</defName>
+    <defName>Fed_Gun_MoritaMKIII</defName>
     <label>Morita MK III</label>
     <description>The Morita MK III represents the next evolution in Mobile Infantry firepower. Chambered in 10x50mm caseless with a massive 99-round capacity, this beast combines sustained suppressive fire with an integrated 30mm grenade launcher. When bugs are coming at you from every direction, the MK III ensures you never run dry. Heavy, powerful, and unapologetically lethal—this is what progress looks like.</description>
     <graphicData>
@@ -207,7 +207,7 @@
         <maxCharges>1</maxCharges>
         <soundReload>Standard_Reload</soundReload>
         <chargeNoun>grenade</chargeNoun>
-        <ammoDef>Gun_MoritaMKIII</ammoDef>
+        <ammoDef>Fed_Gun_MoritaMKIII</ammoDef>
         <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
       </li>
@@ -278,7 +278,7 @@
 <!-- Morita MK II Advanced Systems Rifle -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_MoritaMKIIAdvancedSystemsRifle</defName>
+    <defName>Fed_Gun_MoritaMKIIAdvancedSystemsRifle</defName>
     <label>Morita MK II Advanced Systems Rifle</label>
     <description>Classified Federation R and D prototype. The Morita MK II Advanced Systems Rifle represents the bleeding edge of weapons technology—where the Mobile Infantry is headed. Capable of obliterating fortified positions and massed enemy formations with terrifying efficiency, the MK II is reserved for elite troopers facing the worst threats humanity has encountered. When standard Moritas aren't enough, bring a MK II.</description>
     <graphicData>
@@ -352,7 +352,7 @@
 <!-- Morita MK3 SAW -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_MoritaMK3SAW</defName>
+    <defName>Fed_Gun_MoritaMK3SAW</defName>
     <label>Morita MK3 SAW</label>
     <description>The Morita MK3 SAW turns one trooper into a mobile firebase. Designed for Bastion-class infantry, this squad automatic weapon pours overwhelming firepower downrange, shredding entire bug swarms before they can close distance. Accuracy suffers when fired from standing position—plant yourself, set up your field of fire, and let the bugs come to you. They won't make it far.</description>
     <graphicData>
@@ -426,7 +426,7 @@
 <!-- TDW-99 Morita Tactical SMG -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_TDW-99MoritaTacticalSMG</defName>
+    <defName>Fed_Gun_TDW-99MoritaTacticalSMG</defName>
     <label>TDW-99 Morita Tactical SMG</label>
     <description>When the fighting moves underground or into tight corridors, the TDW-99 Tactical SMG is the tool for the job. This compact Morita variant spits rounds at blistering speed, perfect for clearing tunnel networks and bug hives. It won't reach out and touch enemies at range, but in close quarters, nothing keeps bugs off you better than a TDW-99 on full auto.</description>
     <graphicData>
@@ -500,7 +500,7 @@
 <!-- TW-102-s Peacemaker -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_TW-102-sPeacemaker</defName>
+    <defName>Fed_Gun_TW-102-sPeacemaker</defName>
     <label>TW-102-s Peacemaker</label>
     <description>Every Mobile Infantry trooper carries a Peacemaker. When your Morita runs dry and bugs are closing fast, this sidearm has saved countless lives. The TW-102-s won't drop a Warrior bug in one shot, but it'll buy you the seconds you need to reload or fall back. Reliable, accurate, and always there when you need it—that's the Peacemaker promise.</description>
     <graphicData>
@@ -572,7 +572,7 @@
 <!-- MK55 Tactical Nuclear Launcher -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_MK55TacticalNuclearLauncher</defName>
+    <defName>Fed_Gun_MK55TacticalNuclearLauncher</defName>
     <label>MK55 Tactical Nuclear Launcher</label>
     <description>When bugs are massed too thick for conventional weapons, the Mobile Infantry deploys the MK55. Each miniature nuclear warhead can level a city block or vaporize an entire bug column. Troopers joke that the MK55 is 'overkill in a suitcase,' but when you're facing a Plasma bug or hive entrance, there's no such thing as too much firepower. Load. Aim. Fire. Problem solved.</description>
     <graphicData>
@@ -662,7 +662,7 @@
 <!-- C-32 Chi-Hong Grenade Launcher -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_C-32Chi-HongGrenadeLauncher</defName>
+    <defName>Fed_Gun_C-32Chi-HongGrenadeLauncher</defName>
     <label>C-32 Chi-Hong Grenade Launcher</label>
     <description>The Chi-Hong is proof that good ideas transcend borders. This Chinese-designed grenade launcher earned its place in Federation arsenals through sheer effectiveness. Six grenades in the cylinder, each capable of shredding a Warrior bug or clearing a defensive choke point. Operators swear by the Chi-Hong—when you need to delete a grid square full of bugs, accept no substitutes.</description>
     <graphicData>
@@ -682,7 +682,7 @@
       </recipeUsers>
     </recipeMaker>
     <weaponTags>
-      <li>Gun_C-32Chi-HongGrenadeLauncher</li>
+      <li>Fed_Gun_C-32Chi-HongGrenadeLauncher</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -747,7 +747,7 @@
 <!-- TW-2 SPLIT Shotgun -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_TW-2SPLITShotgun</defName>
+    <defName>Fed_Gun_TW-2SPLITShotgun</defName>
     <label>TW-2 SPLIT Shotgun</label>
     <description>The SPLIT shotgun earned its name from what it does to bugs at close range. This automatic scattergun is pure emergency insurance—when swarms breach your perimeter and it's time for point-blank violence, the SPLIT delivers. Each blast shreds chitin and meat alike. Keep it loaded, keep it close, and pray you never need it. If you do, you'll be glad you have it.</description>
     <possessionCount>1</possessionCount>
@@ -821,7 +821,7 @@
 <!-- E-Pulse 44 A2 -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_E-Pulse44A</defName>
+    <defName>Fed_Gun_E-Pulse44A</defName>
     <label>E-Pulse 44 A2</label>
     <description>The E-Pulse 44 represents Federation energy weapon development—no bullets, no recoil, just pure directed energy. Each pulse burns through chitin with surgical precision. While it lacks the raw stopping power of a Morita, the E-Pulse never runs out of ammo as long as you have power cells. Technical specialists and long-patrol troopers favor the E-Pulse for its reliability in extended operations.</description>
     <techLevel>Spacer</techLevel>
@@ -903,7 +903,7 @@
 <!-- E-Pulse 88 CSW (Crew Served Weapon) -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_E-Pulse88CSW</defName>
+    <defName>Fed_Gun_E-Pulse88CSW</defName>
     <label>E-Pulse 88 CSW</label>
     <description>When you need sustained energy firepower, the E-Pulse 88 CSW delivers. This crew-served monster puts out enough directed energy to cook entire bug formations. Set it up at a choke point, power it up, and let the bugs come. The 88 will hold the line as long as you keep feeding it power cells. Heavy, powerful, and absolutely merciless—this is energy weaponry scaled up to war.</description>
     <techLevel>Spacer</techLevel>
@@ -985,7 +985,7 @@
 <!-- FU-17 Flamethrower -->
 
 <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_FU-17Flamethrower</defName>
+    <defName>Fed_Gun_FU-17Flamethrower</defName>
     <label>FU-17 Flamethrower</label>
     <description>Fire is humanity's oldest weapon, and the FU-17 brings it to the bug war. Nothing clears a tunnel or fortifies a choke point like a wall of flame. Bugs may be fearless, but they're still organic—they burn, they panic, and they die. The FU-17 is heavy, dangerous to carry, and absolutely devastating when you need to hold ground. Keep the flames between you and them.</description>
     <graphicData>
@@ -1054,7 +1054,7 @@
 <!-- MX-90 Fragmentation Grenade -->
 
 <ThingDef ParentName="BaseMakeableGrenade">
-    <defName>Gun_MX-90FragmentationGrenade</defName>
+    <defName>Fed_Gun_MX-90FragmentationGrenade</defName>
     <label>MX-90 Fragmentation Grenade</label>
     <description>The MX-90 is standard kit for every Mobile Infantry trooper. Press the red button for a timed throw, or pull the spoon and hold the button for a dead-man detonation. Versatile, reliable, and devastating—the MX-90 has cleared countless bug tunnels and saved thousands of lives. When in doubt, throw an MX-90 and move.</description>
     <recipeMaker>
@@ -1129,8 +1129,8 @@
 
 <!-- Morita Mk I Smartrifle -->
 
-<ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_AssaultRifle">
-    <defName>Gun_MoritaMkISmartrifle</defName>
+<ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Fed_Gun_MoritaMkISmartrifle</defName>
     <label>Morita Mk I Smartrifle</label>
     <description>The Morita Mk I Rifle (also listed as MK I AR) is an Smartlinked Assault rifle used by Power Suit Troopers of Mobile Infantry during the Second Bug War. With an optional underbarrel grenade launcher or 4-barrel rotary cannon, this weapon automatically links to the targeting HUDs in Power suits allowing for greater accuracy.</description>
     <graphicData>
