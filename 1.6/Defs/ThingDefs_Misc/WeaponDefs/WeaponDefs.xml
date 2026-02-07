@@ -13,7 +13,7 @@
     <label>Morita MKI Assault Rifle</label>
     <description>The Morita MK I is the standard-issue assault rifle of the Terran Federation Mobile Infantry. This bullpup-configured weapon fires high-velocity caseless ammunition at a blistering rate, designed to shred through chitinous armor and overwhelming insectoid swarms. Reliable, durable, and brutally effective—the Morita has served on every front of humanity's war for survival. Every trooper knows: your Morita is your life.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/MoritaMkI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -87,7 +87,7 @@
     <label>TW 202-L Morita Hawkeye</label>
     <description>When bugs need to die at distance, Mobile Infantry marksmen reach for the Hawkeye. This precision instrument features an advanced targeting scope capable of tracking hostile movement and calculating environmental factors in real-time. One shot, one kill—that's the Hawkeye way. Whether eliminating Gunner bugs from safety or taking out Brain bugs, the Hawkeye delivers Federation justice from a kilometer away.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/TW202L</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -159,7 +159,7 @@
     <label>Morita MK III</label>
     <description>The Morita MK III represents the next evolution in Mobile Infantry firepower. Chambered in 10x50mm caseless with a massive 99-round capacity, this beast combines sustained suppressive fire with an integrated 30mm grenade launcher. When bugs are coming at you from every direction, the MK III ensures you never run dry. Heavy, powerful, and unapologetically lethal—this is what progress looks like.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/MoritaMK3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -207,7 +207,7 @@
         <maxCharges>1</maxCharges>
         <soundReload>Standard_Reload</soundReload>
         <chargeNoun>grenade</chargeNoun>
-        <ammoDef>Weapon_GrenadeFrag</ammoDef>
+        <ammoDef>Gun_MoritaMKIII</ammoDef>
         <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
       </li>
@@ -241,7 +241,7 @@
     <defName>MoritaMKIIIGrenade</defName>
     <label>grenade barrel</label>
     <description>Use the grenade barrel attached to the morita MkIII to deploy a grenade.</description>
-    <iconPath>UI/Commands/LaunchFragGrenade</iconPath>
+    <iconPath>Things/Items/Weapons/MX-90</iconPath>
     <aiCanUse>true</aiCanUse>
     <ai_IsIncendiary>false</ai_IsIncendiary>
     <showOnCharacterCard>false</showOnCharacterCard>
@@ -265,12 +265,12 @@
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
       </targetParams>
-      <defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
+      <defaultProjectile>Projectile_MX-90FragmentationGrenade</defaultProjectile>
       <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityLaunchProjectile">
-        <projectileDef>Proj_GrenadeFrag</projectileDef>
+        <projectileDef>Projectile_MX-90FragmentationGrenade</projectileDef>
       </li>
     </comps>
   </AbilityDef>
@@ -282,7 +282,7 @@
     <label>Morita MK II Advanced Systems Rifle</label>
     <description>Classified Federation R and D prototype. The Morita MK II Advanced Systems Rifle represents the bleeding edge of weapons technology—where the Mobile Infantry is headed. Capable of obliterating fortified positions and massed enemy formations with terrifying efficiency, the MK II is reserved for elite troopers facing the worst threats humanity has encountered. When standard Moritas aren't enough, bring a MK II.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/MoritaMK2ASR</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -356,7 +356,7 @@
     <label>Morita MK3 SAW</label>
     <description>The Morita MK3 SAW turns one trooper into a mobile firebase. Designed for Bastion-class infantry, this squad automatic weapon pours overwhelming firepower downrange, shredding entire bug swarms before they can close distance. Accuracy suffers when fired from standing position—plant yourself, set up your field of fire, and let the bugs come to you. They won't make it far.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/MoritaMK3SAW</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -430,81 +430,7 @@
     <label>TDW-99 Morita Tactical SMG</label>
     <description>When the fighting moves underground or into tight corridors, the TDW-99 Tactical SMG is the tool for the job. This compact Morita variant spits rounds at blistering speed, perfect for clearing tunnel networks and bug hives. It won't reach out and touch enemies at range, but in close quarters, nothing keeps bugs off you better than a TDW-99 on full auto.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <statBases>
-      <WorkToMake>24000</WorkToMake>
-      <Mass>1.5</Mass>
-      <AccuracyTouch>0.85</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.35</AccuracyMedium>
-      <AccuracyLong>0.20</AccuracyLong>
-      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-   <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HeavySMG</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
-        <range>22.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
-        <soundCast>Shot_HeavySMG</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
-    </weaponTags>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-
-<!-- TDW-99 Morita Tactical SMG -->
-
-<ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_TDW-99MoritaTacticalSMG</defName>
-    <label>TDW-99 Morita Tactical SMG</label>
-    <description>When the fighting moves underground or into tight corridors, the TDW-99 Tactical SMG is the tool for the job. This compact Morita variant spits rounds at blistering speed, perfect for clearing tunnel networks and bug hives. It won't reach out and touch enemies at range, but in close quarters, nothing keeps bugs off you better than a TDW-99 on full auto.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/TDW-99SMG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -578,7 +504,7 @@
     <label>TW-102-s Peacemaker</label>
     <description>Every Mobile Infantry trooper carries a Peacemaker. When your Morita runs dry and bugs are closing fast, this sidearm has saved countless lives. The TW-102-s won't drop a Warrior bug in one shot, but it'll buy you the seconds you need to reload or fall back. Reliable, accurate, and always there when you need it—that's the Peacemaker promise.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/TW-102-s</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -650,7 +576,7 @@
     <label>MK55 Tactical Nuclear Launcher</label>
     <description>When bugs are massed too thick for conventional weapons, the Mobile Infantry deploys the MK55. Each miniature nuclear warhead can level a city block or vaporize an entire bug column. Troopers joke that the MK55 is 'overkill in a suitcase,' but when you're facing a Plasma bug or hive entrance, there's no such thing as too much firepower. Load. Aim. Fire. Problem solved.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/MK55TNL</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -714,14 +640,6 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>7.8</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-      </li>
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
   </ThingDef>
 
 <ThingDef ParentName="BaseBullet">
@@ -748,7 +666,7 @@
     <label>C-32 Chi-Hong Grenade Launcher</label>
     <description>The Chi-Hong is proof that good ideas transcend borders. This Chinese-designed grenade launcher earned its place in Federation arsenals through sheer effectiveness. Six grenades in the cylinder, each capable of shredding a Warrior bug or clearing a defensive choke point. Operators swear by the Chi-Hong—when you need to delete a grid square full of bugs, accept no substitutes.</description>
     <graphicData>
-      <texPath>Weapon/M80GLMachine</texPath>
+      <texPath>Things/Items/Weapons/C-32</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.3</drawSize>
     </graphicData>
@@ -834,7 +752,7 @@
     <description>The SPLIT shotgun earned its name from what it does to bugs at close range. This automatic scattergun is pure emergency insurance—when swarms breach your perimeter and it's time for point-blank violence, the SPLIT delivers. Each blast shreds chitin and meat alike. Keep it loaded, keep it close, and pray you never need it. If you do, you'll be glad you have it.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
+      <texPath>Things/Items/Weapons/TW-2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -902,13 +820,13 @@
 
 <!-- E-Pulse 44 A2 -->
 
-<ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_ChargeRifle">
-    <defName>Gun_E-Pulse44A2</defName>
+<ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_E-Pulse44A</defName>
     <label>E-Pulse 44 A2</label>
     <description>The E-Pulse 44 represents Federation energy weapon development—no bullets, no recoil, just pure directed energy. Each pulse burns through chitin with surgical precision. While it lacks the raw stopping power of a Morita, the E-Pulse never runs out of ammo as long as you have power cells. Technical specialists and long-patrol troopers favor the E-Pulse for its reliability in extended operations.</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+      <texPath>Things/Items/Weapons/E-Pulse44A2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -984,13 +902,13 @@
 
 <!-- E-Pulse 88 CSW (Crew Served Weapon) -->
 
-<ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_ChargeRifle">
+<ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_E-Pulse88CSW</defName>
     <label>E-Pulse 88 CSW</label>
     <description>When you need sustained energy firepower, the E-Pulse 88 CSW delivers. This crew-served monster puts out enough directed energy to cook entire bug formations. Set it up at a choke point, power it up, and let the bugs come. The 88 will hold the line as long as you keep feeding it power cells. Heavy, powerful, and absolutely merciless—this is energy weaponry scaled up to war.</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+      <texPath>Things/Items/Weapons/E-Pulse88</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -1071,7 +989,7 @@
     <label>FU-17 Flamethrower</label>
     <description>Fire is humanity's oldest weapon, and the FU-17 brings it to the bug war. Nothing clears a tunnel or fortifies a choke point like a wall of flame. Bugs may be fearless, but they're still organic—they burn, they panic, and they die. The FU-17 is heavy, dangerous to carry, and absolutely devastating when you need to hold ground. Keep the flames between you and them.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/IncendiaryLauncher</texPath>
+      <texPath>Things/Items/Weapons/FU-17</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -1144,7 +1062,7 @@
     </recipeMaker>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Grenades</texPath>
+      <texPath>Things/Items/Weapons/MX-90</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.3</uiIconScale>
@@ -1181,7 +1099,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-        <defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
+        <defaultProjectile>Projectile_MX-90FragmentationGrenade</defaultProjectile>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
       </li>
     </verbs>
@@ -1194,6 +1112,21 @@
     </comps>
   </ThingDef>
 
+<ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Projectile_MX-90FragmentationGrenade</defName>
+    <label>MX-90 Fragmentation Grenade</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Items/Weapons/MX-90</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.9</explosionRadius >
+      <damageDef>Bomb</damageDef>
+      <explosionDelay>75</explosionDelay>
+    </projectile>
+  </ThingDef>
+
 <!-- Morita Mk I Smartrifle -->
 
 <ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_AssaultRifle">
@@ -1201,7 +1134,7 @@
     <label>Morita Mk I Smartrifle</label>
     <description>The Morita Mk I Rifle (also listed as MK I AR) is an Smartlinked Assault rifle used by Power Suit Troopers of Mobile Infantry during the Second Bug War. With an optional underbarrel grenade launcher or 4-barrel rotary cannon, this weapon automatically links to the targeting HUDs in Power suits allowing for greater accuracy.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Items/Weapons/MoritaMkISmartrifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>

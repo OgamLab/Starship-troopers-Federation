@@ -30,8 +30,8 @@
         <possessions>
         </possessions>
         <forcedTraits>
-            <Tough>1</Tough>
-            <Bloodlust>1</Bloodlust>
+            <Tough>0</Tough>
+            <Bloodlust>0</Bloodlust>
         </forcedTraits>
     </BackstoryDef>
 
@@ -62,8 +62,8 @@
         <possessions>
         </possessions>
         <forcedTraits>
-            <Kind>1</Kind>
-            <Industriousness>0</Industriousness>
+            <Kind>0</Kind>
+            <Industriousness>1</Industriousness>
         </forcedTraits>
     </BackstoryDef>
 
@@ -79,13 +79,11 @@
         <skillGains>
             <Shooting>3</Shooting>
             <Animals>3</Animals>
-            <Plants>2</Plants>
         </skillGains>
         <workDisables>None</workDisables>
         <requiredWorkTags>
             <li>Violent</li>
             <li>Animals</li>
-            <li>Plants</li>
         </requiredWorkTags>
         <spawnCategories>
             <li>Starship_Adult</li>
@@ -156,7 +154,7 @@
         <possessions>
         </possessions>
         <forcedTraits>
-            <Tough>1</Tough>
+            <Tough>0</Tough>
             <Brawler>0</Brawler>
         </forcedTraits>
     </BackstoryDef>
@@ -187,9 +185,9 @@
         <possessions>
         </possessions>
         <forcedTraits>
-            <Tough>2</Tough>
-            <Bloodlust>1</Bloodlust>
-            <Nerves>0</Nerves>
+            <Tough>0</Tough>
+            <Bloodlust>0</Bloodlust>
+            <Nerves>1</Nerves>
         </forcedTraits>
     </BackstoryDef>
 
@@ -237,12 +235,10 @@
         <skillGains>
             <Shooting>2</Shooting>
             <Intellectual>3</Intellectual>
-            <Medicine>6</Medicine>
         </skillGains>
         <workDisables>None</workDisables>
         <requiredWorkTags>
             <li>Violent</li>
-            <li>Medicine</li>
             <li>Intellectual</li>
         </requiredWorkTags>
         <spawnCategories>
@@ -253,7 +249,7 @@
         <possessions>
         </possessions>
         <forcedTraits>
-            <Kind>1</Kind>
+            <Kind>0</Kind>
             <Tough>0</Tough>
         </forcedTraits>
     </BackstoryDef>    
@@ -316,7 +312,7 @@
         </possessions>
         <forcedTraits>
             <Nerves>1</Nerves>
-            <Tough>2</Tough>
+            <Tough>0</Tough>
         </forcedTraits>
     </BackstoryDef>    
 
@@ -349,7 +345,7 @@
         <possessions>
         </possessions>
         <forcedTraits>
-            <Kind>1</Kind>
+            <Kind>0</Kind>
         </forcedTraits>
     </BackstoryDef>    
 
@@ -372,7 +368,6 @@
         </workDisables>
         <requiredWorkTags>
             <li>Crafting</li>
-            <li>Research</li>
             <li>Intellectual</li>
         </requiredWorkTags>
         <spawnCategories>
