@@ -6,9 +6,26 @@
 
 <!--__Ranged Weapons__-->
 
+<ThingDef Name="FederationWeaponBase" ParentName="BaseHumanMakeableGun" Abstract="True">
+    <uiIconScale>1</uiIconScale>
+    <recipeMaker>
+      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
 <!-- Morita MKI Assault Rifle -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_MoritaMkIAssaultRifle</defName>
     <label>Morita MKI Assault Rifle</label>
     <description>The Morita MK I is the standard-issue assault rifle of the Terran Federation Mobile Infantry. This bullpup-configured weapon fires high-velocity caseless ammunition at a blistering rate, designed to shred through chitinous armor and overwhelming insectoid swarms. Reliable, durable, and brutally effective—the Morita has served on every front of humanity's war for survival. Every trooper knows: your Morita is your life.</description>
@@ -16,18 +33,9 @@
       <texPath>Things/Items/Weapons/MoritaMkI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1</uiIconScale>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>40000</WorkToMake>
       <Mass>3.5</Mass>
@@ -56,8 +64,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
     </weaponTags>
     <tools>
       <li>
@@ -82,7 +89,7 @@
 
 <!-- TW 202-L Morita Hawkeye -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_TW202-LMoritaHawkeye</defName>
     <label>TW 202-L Morita Hawkeye</label>
     <description>When bugs need to die at distance, Mobile Infantry marksmen reach for the Hawkeye. This precision instrument features an advanced targeting scope capable of tracking hostile movement and calculating environmental factors in real-time. One shot, one kill—that's the Hawkeye way. Whether eliminating Gunner bugs from safety or taking out Brain bugs, the Hawkeye delivers Federation justice from a kilometer away.</description>
@@ -92,16 +99,7 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
+    <equippedAngleOffset>50</equippedAngleOffset>
     <statBases>
       <WorkToMake>45000</WorkToMake>
       <Mass>4</Mass>
@@ -128,8 +126,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_TW202-LMoritaHawkeye</li>
     </weaponTags>
     <tools>
       <li>
@@ -154,7 +151,7 @@
 
 <!-- Morita MK III -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_MoritaMKIII</defName>
     <label>Morita MK III</label>
     <description>The Morita MK III represents the next evolution in Mobile Infantry firepower. Chambered in 10x50mm caseless with a massive 99-round capacity, this beast combines sustained suppressive fire with an integrated 30mm grenade launcher. When bugs are coming at you from every direction, the MK III ensures you never run dry. Heavy, powerful, and unapologetically lethal—this is what progress looks like.</description>
@@ -164,16 +161,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>34000</WorkToMake>
       <Mass>8.5</Mass>
@@ -213,8 +200,7 @@
       </li>
     </comps>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_MoritaMKIII</li>
     </weaponTags>
     <tools>
       <li>
@@ -277,7 +263,7 @@
 
 <!-- Morita MK II Advanced Systems Rifle -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_MoritaMKIIAdvancedSystemsRifle</defName>
     <label>Morita MK II Advanced Systems Rifle</label>
     <description>Classified Federation R and D prototype. The Morita MK II Advanced Systems Rifle represents the bleeding edge of weapons technology—where the Mobile Infantry is headed. Capable of obliterating fortified positions and massed enemy formations with terrifying efficiency, the MK II is reserved for elite troopers facing the worst threats humanity has encountered. When standard Moritas aren't enough, bring a MK II.</description>
@@ -287,16 +273,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>45000</WorkToMake>
       <Mass>4.6</Mass>
@@ -325,8 +301,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_MoritaMKIIAdvancedSystemsRifle</li>
     </weaponTags>
     <tools>
       <li>
@@ -351,7 +326,7 @@
 
 <!-- Morita MK3 SAW -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_MoritaMK3SAW</defName>
     <label>Morita MK3 SAW</label>
     <description>The Morita MK3 SAW turns one trooper into a mobile firebase. Designed for Bastion-class infantry, this squad automatic weapon pours overwhelming firepower downrange, shredding entire bug swarms before they can close distance. Accuracy suffers when fired from standing position—plant yourself, set up your field of fire, and let the bugs come to you. They won't make it far.</description>
@@ -361,16 +336,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <Mass>10</Mass>
@@ -399,8 +364,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_MoritaMK3SAW</li>
     </weaponTags>
     <tools>
       <li>
@@ -425,7 +389,7 @@
 
 <!-- TDW-99 Morita Tactical SMG -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_TDW-99MoritaTacticalSMG</defName>
     <label>TDW-99 Morita Tactical SMG</label>
     <description>When the fighting moves underground or into tight corridors, the TDW-99 Tactical SMG is the tool for the job. This compact Morita variant spits rounds at blistering speed, perfect for clearing tunnel networks and bug hives. It won't reach out and touch enemies at range, but in close quarters, nothing keeps bugs off you better than a TDW-99 on full auto.</description>
@@ -435,16 +399,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>24000</WorkToMake>
       <Mass>1.5</Mass>
@@ -473,8 +427,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_TDW-99MoritaTacticalSMG</li>
     </weaponTags>
     <tools>
       <li>
@@ -499,7 +452,7 @@
 
 <!-- TW-102-s Peacemaker -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_TW-102-sPeacemaker</defName>
     <label>TW-102-s Peacemaker</label>
     <description>Every Mobile Infantry trooper carries a Peacemaker. When your Morita runs dry and bugs are closing fast, this sidearm has saved countless lives. The TW-102-s won't drop a Warrior bug in one shot, but it'll buy you the seconds you need to reload or fall back. Reliable, accurate, and always there when you need it—that's the Peacemaker promise.</description>
@@ -509,16 +462,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>5000</WorkToMake>
       <Mass>1.2</Mass>
@@ -545,8 +488,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_TW-102-sPeacemaker</li>
     </weaponTags>
     <tools>
       <li>
@@ -571,7 +513,7 @@
 
 <!-- MK55 Tactical Nuclear Launcher -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_MK55TacticalNuclearLauncher</defName>
     <label>MK55 Tactical Nuclear Launcher</label>
     <description>When bugs are massed too thick for conventional weapons, the Mobile Infantry deploys the MK55. Each miniature nuclear warhead can level a city block or vaporize an entire bug column. Troopers joke that the MK55 is 'overkill in a suitcase,' but when you're facing a Plasma bug or hive entrance, there's no such thing as too much firepower. Load. Aim. Fire. Problem solved.</description>
@@ -581,32 +523,17 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
      <statBases>
       <MarketValue>1000</MarketValue>
       <Mass>8</Mass>
       <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>Gun</li>
-      <li>GunSingleUse</li>
+      <li>Fed_Gun_MK55TacticalNuclearLauncher</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
-    <tradeTags>
-      <li>ExoticMisc</li>
-      <li>WeaponRanged</li>
-    </tradeTags>
     <costList>
       <Steel>30</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
@@ -661,7 +588,7 @@
 
 <!-- C-32 Chi-Hong Grenade Launcher -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_C-32Chi-HongGrenadeLauncher</defName>
     <label>C-32 Chi-Hong Grenade Launcher</label>
     <description>The Chi-Hong is proof that good ideas transcend borders. This Chinese-designed grenade launcher earned its place in Federation arsenals through sheer effectiveness. Six grenades in the cylinder, each capable of shredding a Warrior bug or clearing a defensive choke point. Operators swear by the Chi-Hong—when you need to delete a grid square full of bugs, accept no substitutes.</description>
@@ -672,15 +599,6 @@
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <recipeUsers>
-        <li>FabricationBench</li>
-      </recipeUsers>
-    </recipeMaker>
     <weaponTags>
       <li>Fed_Gun_C-32Chi-HongGrenadeLauncher</li>
     </weaponTags>
@@ -746,7 +664,7 @@
 
 <!-- TW-2 SPLIT Shotgun -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_TW-2SPLITShotgun</defName>
     <label>TW-2 SPLIT Shotgun</label>
     <description>The SPLIT shotgun earned its name from what it does to bugs at close range. This automatic scattergun is pure emergency insurance—when swarms breach your perimeter and it's time for point-blank violence, the SPLIT delivers. Each blast shreds chitin and meat alike. Keep it loaded, keep it close, and pray you never need it. If you do, you'll be glad you have it.</description>
@@ -760,8 +678,7 @@
       <li>ShortShots</li>
     </weaponClasses>
     <weaponTags>
-      <li>ShortShots</li>
-      <li>PumpShotgun</li>
+      <li>Fed_Gun_TW-2SPLITShotgun</li>
     </weaponTags>
     <statBases>
       <WorkToMake>12000</WorkToMake>
@@ -776,13 +693,6 @@
       <Steel>60</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <displayPriority>430</displayPriority>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-    </recipeMaker>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -820,7 +730,7 @@
 
 <!-- E-Pulse 44 A2 -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_E-Pulse44A</defName>
     <label>E-Pulse 44 A2</label>
     <description>The E-Pulse 44 represents Federation energy weapon development—no bullets, no recoil, just pure directed energy. Each pulse burns through chitin with surgical precision. While it lacks the raw stopping power of a Morita, the E-Pulse never runs out of ammo as long as you have power cells. Technical specialists and long-patrol troopers favor the E-Pulse for its reliability in extended operations.</description>
@@ -839,16 +749,6 @@
       <AccuracyLong>0.75</AccuracyLong>
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
-      </recipeUsers>
-      <displayPriority>200</displayPriority>
-    </recipeMaker>
     <costList>
       <Plasteel>50</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
@@ -857,11 +757,8 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <weaponTags>
-      <li>SpacerGun</li>
+      <li>Fed_Gun_E-Pulse44A</li>
     </weaponTags>
-    <tradeTags>
-      <li>WeaponRanged</li>
-    </tradeTags>
     <weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
@@ -902,7 +799,7 @@
 
 <!-- E-Pulse 88 CSW (Crew Served Weapon) -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_E-Pulse88CSW</defName>
     <label>E-Pulse 88 CSW</label>
     <description>When you need sustained energy firepower, the E-Pulse 88 CSW delivers. This crew-served monster puts out enough directed energy to cook entire bug formations. Set it up at a choke point, power it up, and let the bugs come. The 88 will hold the line as long as you keep feeding it power cells. Heavy, powerful, and absolutely merciless—this is energy weaponry scaled up to war.</description>
@@ -921,29 +818,13 @@
       <AccuracyLong>0.18</AccuracyLong>
       <RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
     </statBases>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
-      </recipeUsers>
-      <displayPriority>200</displayPriority>
-    </recipeMaker>
     <costList>
       <Plasteel>50</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <weaponTags>
-      <li>SpacerGun</li>
+      <li>Fed_Gun_E-Pulse88CSW</li>
     </weaponTags>
-    <tradeTags>
-      <li>WeaponRanged</li>
-    </tradeTags>
     <weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
@@ -984,7 +865,7 @@
 
 <!-- FU-17 Flamethrower -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_FU-17Flamethrower</defName>
     <label>FU-17 Flamethrower</label>
     <description>Fire is humanity's oldest weapon, and the FU-17 brings it to the bug war. Nothing clears a tunnel or fortifies a choke point like a wall of flame. Bugs may be fearless, but they're still organic—they burn, they panic, and they die. The FU-17 is heavy, dangerous to carry, and absolutely devastating when you need to hold ground. Keep the flames between you and them.</description>
@@ -997,6 +878,9 @@
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
+    <weaponTags>
+      <li>Fed_Gun_FU-17Flamethrower</li>
+    </weaponTags>
     <statBases>
       <WorkToMake>20000</WorkToMake>
       <Mass>3.4</Mass>
@@ -1006,13 +890,6 @@
       <Steel>75</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <displayPriority>455</displayPriority>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-    </recipeMaker>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -1078,8 +955,7 @@
       <Chemfuel>80</Chemfuel>
     </costList>
     <weaponTags>
-      <li>GrenadeDestructive</li>
-      <li>EmpireGrenadeDestructive</li>
+      <li>Fed_Gun_MX-90FragmentationGrenade</li>
     </weaponTags>
     <thingCategories>
       <li>Grenades</li>
@@ -1129,7 +1005,7 @@
 
 <!-- Morita Mk I Smartrifle -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+<ThingDef ParentName="FederationWeaponBase">
     <defName>Fed_Gun_MoritaMkISmartrifle</defName>
     <label>Morita Mk I Smartrifle</label>
     <description>The Morita Mk I Rifle (also listed as MK I AR) is an Smartlinked Assault rifle used by Power Suit Troopers of Mobile Infantry during the Second Bug War. With an optional underbarrel grenade launcher or 4-barrel rotary cannon, this weapon automatically links to the targeting HUDs in Power suits allowing for greater accuracy.</description>
@@ -1138,16 +1014,6 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <recipeMaker>
-      <researchPrerequisite>Research_FederationWeaponry</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>40000</WorkToMake>
       <Mass>3.5</Mass>
@@ -1176,8 +1042,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>Fed_Gun_MoritaMkISmartrifle</li>
     </weaponTags>
     <tools>
       <li>

@@ -2,6 +2,351 @@
 
 <Defs>
 
+<PawnKindDef Name= "FederationPawnBase" Abstract= "true">
+    <race>Human</race>
+    <initialWillRange>2~4</initialWillRange>
+    <defaultFactionType>Fed_UnitedCitizenFederation_Faction</defaultFactionType>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>1050~4500</apparelMoney>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnorePollution>True</apparelIgnorePollution>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <useFactionXenotypes>true</useFactionXenotypes>
+    <weaponMoney>2000~4500</weaponMoney>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Social</li>
+    </requiredWorkTags>
+  </PawnKindDef>
 
+  <!--__Faction Pawns__-->
+
+  <!-- Recruit -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Recruit</defName>
+    <label>Recruit</label>
+    <combatPower>30</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_TW-102-sPeacemaker</li>
+    </weaponTags>
+  </PawnKindDef>
     
+<!-- Private -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Private</defName>
+    <label>Private</label>
+    <combatPower>40</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Corporal -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Corporal</defName>
+    <label>Corporal</label>
+    <combatPower>40</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Sergeant -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Sergeant</defName>
+    <label>Sergeant</label>
+    <combatPower>50</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Staff Sergeant -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_StaffSergeant</defName>
+    <label>Staff Sergeant</label>
+    <combatPower>60</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Tech Sergeant -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Tech_Sergeant</defName>
+    <label>Tech Sergeant</label>
+    <combatPower>60</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkISmartrifle</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Sergeant Major -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Sergeant_Major</defName>
+    <label>Sergeant Major</label>
+    <combatPower>70</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMKIII</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Lieutenant -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Lieutenant</defName>
+    <label>Lieutenant</label>
+    <combatPower>60</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_TDW-99MoritaTacticalSMG</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Captain -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Captain</defName>
+    <label>Captain</label>
+    <combatPower>105</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMKIII</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Major -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Major</defName>
+    <label>Major</label>
+    <combatPower>100</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMKIII</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Specialized Roles -->
+
+<!-- Marauder -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Marauder</defName>
+    <label>Marauder</label>
+    <combatPower>120</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_M-1A4PoweredHelmet</li>
+      <li>Fed_Apparel_M-1A4PoweredSuit</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_TW-2SPLITShotgun</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Grenadier -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Grenadier</defName>
+    <label>Grenadier</label>
+    <combatPower>50</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_C-32Chi-HongGrenadeLauncher</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Medic -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Medic</defName>
+    <label>Medic</label>
+    <combatPower>50</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Engineer -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Engineer</defName>
+    <label>Engineer</label>
+    <combatPower>60</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Scout -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Scout</defName>
+    <label>Scout</label>
+    <combatPower>40</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_TW-102-sPeacemaker</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Sniper -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>MI_Sniper</defName>
+    <label>Sniper</label>
+    <combatPower>80</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMKIIAdvancedSystemsRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!-- Support Roles -->
+
+<!-- Trader -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>Fed_Trader</defName>
+    <label>Trader</label>
+    <combatPower>30</combatPower>
+    <trader>true</trader>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_TW-102-sPeacemaker</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Recruiter -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>Fed_Recruiter</defName>
+    <label>Recruiter</label>
+    <combatPower>30</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_TW-102-sPeacemaker</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Scientist -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>Fed_Scientist</defName>
+    <label>Scientist</label>
+    <combatPower>20</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_TW-102-sPeacemaker</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+<!-- Officer Political -->
+
+  <PawnKindDef ParentName="FederationPawnBase">
+    <defName>Fed_Officer_Political</defName>
+    <label>Officer Political</label>
+    <combatPower>80</combatPower>
+    <apparelRequired>
+      <li>Fed_Apparel_MICombatUndersuit</li>
+      <li>Fed_Apparel_MITrainingFatigues</li>
+      <li>Fed_Apparel_MIFieldCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Fed_Gun_MoritaMkIAssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+
+
 </Defs>
